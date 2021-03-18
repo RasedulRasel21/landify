@@ -447,8 +447,12 @@ hr.style2 {
   margin-top: 15px;
   color: #d9dbe1;
 }
-.footer-left p span {
+.footer-left p a {
   margin-left: 24px;
+  color: #d9dbe1;
+}
+.footer-link {
+  margin-left: 0 !important;
 }
 .footer-apps-store-icon {
   display: grid;
