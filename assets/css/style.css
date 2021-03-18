@@ -17,7 +17,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -91,10 +94,21 @@ a {
   justify-content: flex-end;
   padding-top: 16px;
 }
-.google-play-img {
-  margin-right: 12px;
+.play-store img {
+  height: 100%;
 }
-
+.google-play-img {
+  margin-right: 30px;
+}
+.appstore-img {
+  margin-right: 17px;
+}
+header {
+  background-image: url("../images/herobg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .hero-section {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -117,6 +131,12 @@ a {
   background: #8c30f5;
   border-radius: 5px;
   color: #fff;
+  transition: 0.3s;
+}
+.btn1:hover {
+  background: #f6f9ff;
+  color: #000;
+  border: 1px solid #000;
 }
 .logos-sections {
   padding: 0 165px;
@@ -311,6 +331,21 @@ hr.style2 {
 .achievement-right-one-icon svg {
   margin-top: 17px;
 }
+
+.achievement-right-two-top {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 7px;
+}
+.achievement-right-two-bottom {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin-top: 36px;
+  grid-gap: 7px;
+}
+.achievement-right-two-icon svg {
+  margin-top: 10px;
+}
 .headline {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -338,6 +373,10 @@ hr.style2 {
   font-size: 20px;
   color: #8c30f5;
 }
+.headline-right a:hover svg {
+  margin-left: 5px;
+  transition: 0.3s;
+}
 .trends {
   padding: 64px 165px;
   text-align: center;
@@ -355,6 +394,7 @@ hr.style2 {
 .trends-top p {
   font-size: 18px;
   max-width: 540px;
+  line-height: 32px;
 }
 .trends-bottom {
   margin-top: 48px;
@@ -416,9 +456,6 @@ hr.style2 {
 .footer-right {
   line-height: 40px;
   color: #d9dbe1;
-}
-.footer-icon-app {
-  margin-top: 16px;
 }
 @media only screen and (max-width: 1300px) {
   .header-area {
