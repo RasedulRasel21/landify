@@ -47,7 +47,7 @@ a {
 }
 .header-area {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 1.5fr;
   padding: 0 165px;
   align-items: center;
 }
@@ -465,6 +465,46 @@ hr.style2 {
   .header-area {
     padding: 0 30px;
   }
+  .project {
+    grid-template-columns: 1fr;
+    padding: 0 80px;
+  }
+  .header-area {
+    grid-template-columns: 3fr 1.5fr;
+  }
+  .hero-left h1 {
+    font-size: 55px;
+  }
+  .hero-left {
+    padding: 100px 0;
+  }
+  .features {
+    padding: 64px 100px;
+  }
+  .logos-sections {
+    padding: 0 100px;
+  }
+  .stories {
+    padding: 64px 100px;
+  }
+  .achievement {
+    padding: 82px;
+  }
+  .headline {
+    padding: 0 80px;
+  }
+  .headline-right {
+    padding: 0;
+  }
+  .headline-right p {
+    margin: 32px 0 10px 0;
+  }
+  .trends {
+    padding: 64px 80px;
+  }
+  .footer {
+    padding: 56px 80px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .header-mobile-close {
@@ -508,11 +548,14 @@ hr.style2 {
     top: 0;
     background: #1d1d1d;
     height: 100%;
-    width: 50%;
+    width: 100%;
     padding: 30px 0;
     transition: 0.3s;
+    display: block;
   }
-
+  .des-logo {
+    display: none;
+  }
   .header-menu ul li {
     display: block;
     margin: 30px 40px;
@@ -528,5 +571,248 @@ hr.style2 {
   }
   .quote-bg-mobile {
     display: block;
+  }
+  .header-menu-bar img {
+    position: absolute;
+    top: 16px;
+    left: 40%;
+  }
+  .play-store {
+    display: none;
+  }
+  .hero-section {
+    grid-template-columns: 1fr;
+    padding: 50px;
+  }
+  .hero-left {
+    padding: 0px;
+  }
+  .hero-left h1 {
+    font-size: 50px;
+  }
+  .btn1 {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+  .logos-sections {
+    padding: 50px;
+  }
+  .logos-sections ul li {
+    padding: 0;
+    margin-top: 10px;
+  }
+  .logos-sections ul {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  hr.style1 {
+    margin: 20px 0;
+  }
+
+  hr.style2 {
+    margin: 20px 0;
+  }
+
+  .features {
+    padding: 50px;
+    text-align: left;
+  }
+
+  .features h1 {
+    font-size: 36px;
+  }
+  .features .features-para {
+    font-size: 16px;
+    margin-left: 0;
+  }
+  .features-top {
+    grid-template-columns: 1fr;
+  }
+  .features-top h6 {
+    font-size: 20px;
+  }
+  .features-top p {
+    font-size: 14px;
+  }
+  .features-bottom {
+    grid-template-columns: 1fr;
+  }
+  .features-bottom h6 {
+    font-size: 20px;
+  }
+  .features-bottom p {
+    font-size: 14px;
+  }
+  .stories-left {
+    text-align: left;
+  }
+  .stories-left-top {
+    padding: 0 30px;
+  }
+  .stories-left-bottom {
+    max-width: 100%;
+  }
+  .stories-right-top {
+    max-width: 100%;
+  }
+  .stories-right-bottom {
+    max-width: 100%;
+  }
+  .stories-right {
+    margin-top: 0px;
+  }
+  .stories h1 {
+    font-size: 36px;
+  }
+  .stories p {
+    font-size: 16px;
+  }
+  .achievement {
+    grid-template-columns: 1fr;
+    padding: 50px;
+  }
+  .achievement-left h1 {
+    font-size: 36px;
+  }
+  .achievement-left p {
+    font-size: 16px;
+  }
+  .achievement-right {
+    grid-template-columns: 1fr;
+  }
+  .achievement-right h6 {
+    font-size: 24px;
+  }
+  .achievement-right-two-icon svg {
+    margin-left: -10px;
+  }
+  .achievement-right-two-top {
+    grid-gap: 0px;
+  }
+  .achievement-right-one-top {
+    grid-template-columns: 1fr 9fr;
+  }
+  .achievement-right-one-top {
+    grid-template-columns: 1fr 9fr;
+  }
+  .achievement-right-one-bottom {
+    grid-template-columns: 1fr 9fr;
+  }
+  .achievement-right-two-top {
+    grid-template-columns: 1fr 9fr;
+  }
+  .achievement-right-two-bottom {
+    grid-gap: 0px;
+    grid-template-columns: 1fr 9fr;
+  }
+  .headline {
+    grid-template-columns: 1fr;
+    padding: 50px;
+  }
+  .headline-left {
+    background: #f1e4ff;
+    border-radius: 8px;
+    padding: 56px 90px 0 90px;
+    margin: auto;
+  }
+  .headline-right {
+    padding: 20px;
+  }
+  .headline-right h1 {
+    font-size: 36px;
+  }
+  .headline-right p {
+    font-size: 16px;
+  }
+  .headline-right a {
+    font-size: 18px;
+  }
+  .trends {
+    padding: 50px;
+  }
+  .trends-top {
+    grid-template-columns: 1fr;
+  }
+  .trends-top h1 {
+    font-size: 36px;
+  }
+  .trends-top p {
+    font-size: 16px;
+  }
+  .trends-bottom {
+    margin-top: 36px;
+  }
+  .project-right img {
+    width: auto;
+  }
+  .project {
+    padding: 50px;
+    grid-template-columns: 1fr;
+  }
+  .project h1 {
+    font-size: 36px;
+  }
+  .project-left {
+    padding: 0;
+  }
+  .project-right {
+    display: block;
+  }
+  .project p {
+    font-size: 16px;
+  }
+  .mockup2 {
+    margin-top: 0px;
+  }
+  .footer {
+    padding: 50px;
+    grid-template-columns: 1fr;
+  }
+  .footer-left p a {
+    margin-left: 0px !important;
+    color: #d9dbe1;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-right img {
+    width: auto;
+  }
+
+  .stories {
+    grid-template-columns: 1fr;
+    padding: 0px;
+  }
+  .hero-left h1 {
+    font-size: 40px;
+  }
+  .hero-section {
+    padding: 30px;
+  }
+  .logos-sections {
+    padding: 30px;
+  }
+  .features {
+    padding: 30px;
+  }
+  .stories-left-top {
+    padding: 0 30px;
+  }
+  .achievement {
+    padding: 30px;
+  }
+  .headline {
+    padding: 30px;
+  }
+  .trends {
+    padding: 30px;
+  }
+  .project {
+    padding: 30px;
+  }
+  .footer {
+    padding: 30px;
   }
 }

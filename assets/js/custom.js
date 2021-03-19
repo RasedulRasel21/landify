@@ -60,4 +60,13 @@
             countUp();
         }
     });
+
+
+});
+
+AOS.init({
+  disable: function() {
+    var maxWidth = 991;
+    return window.innerWidth < maxWidth;
+  }
 });
